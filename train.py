@@ -99,9 +99,9 @@ def main(
         device = torch.device('cpu')
     print('Using {}'.format(device))
 
-    train_dataset = datasets.MNIST('data', train=True, download=True, transform=transforms.ToTensor())
+    train_dataset = datasets.KMNIST('data', train=True, download=True, transform=transforms.ToTensor())
     train_loader = torch.utils.data.DataLoader(dataset=train_dataset, batch_size=batch_size, shuffle=True)
-    validation_dataset = datasets.MNIST('data', train=False, transform=transforms.ToTensor())
+    validation_dataset = datasets.KMNIST('data', train=False, transform=transforms.ToTensor())
     validation_loader = torch.utils.data.DataLoader(dataset=validation_dataset, batch_size=batch_size, shuffle=False)
 
     net = Classifier().to(device)

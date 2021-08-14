@@ -1,10 +1,9 @@
 # A Small VGG Like Classifier for MNIST
-A neural network model of VGG like architecture is implemented and achieves 99% accuracy on MNIST classification task.
+A neural network model of VGG like architecture is implemented and trianed for a classification task on KMNIST.
 
 ## Setup environment
 ```
-$ conda create --name smallvgg python=3.8
-$ pip install -r requirements.txt
+$ conda create --name smallvgg --file spec-file.txt
 ```
 
 ## Training & validation
